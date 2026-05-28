@@ -1,0 +1,269 @@
+input=
+<articles>
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q0: identity transform: update(//node() | //@*, .)
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q1: delete all attributes: update(//@*, ())
+output=
+<articles>
+    <article>
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article>
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q2: delete all chairs: update(//article[@name='chair'], ())
+output=
+<articles> 
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q3: delete all chairs (equivalent): update(//article, if (@name='chair') then () else .)
+output=
+<articles> 
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q4: delete stock info of chairs: update(//article/@onStock[../@name='chair'], ())
+output=
+<articles>
+    <article name="chair">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q5: set prize of chair to 9.5: update(//article[@name='chair']/prize, 9.5)
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <prize>9.5</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q6: set attribute value to 0: update(//article[@name='chair']/@onStock, 0)
+output=
+<articles>
+    <article name="chair" onStock="0">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q7: increment attribute value by 50: update(//article[@name='chair']/@onStock, . + 50)
+output=
+<articles>
+    <article name="chair" onStock="100">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q8: make all articles a bit cheaper: update(//article/prize, . * 0.95)
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <prize>9.5</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>19</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q9: move article position: move second article before first article: update(//article[1], (//article[2], .))
+output=
+<articles>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article> 
+</articles>
+
+Q10: append some new elements at end: update(/articles/article[last()], (., <foo/>, <article name='sofa' onStock='40'> <prize>30.0</prize> <quantity>500</quantity> </article>))
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+    <foo/>
+    <article onStock="40" name="sofa">
+        <prize>30.0</prize>
+        <quantity>500</quantity>
+    </article>
+</articles>
+
+Q11: rename an attribute: update(//@onStock, attribute {'availability'} { string(.) })
+output=
+<articles>
+    <article name="chair" availability="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" availability="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q12: rename an element: update(//article/prize, <price>{string(.)}</price>)
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <price>10.0</price>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <price>20.0</price>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q13: turn an element into an attribute: update(//article/prize, attribute {'price'} {string(.)})
+output=
+<articles>
+    <article name="chair" onStock="50" price="10.0"> 
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30" price="20.0"> 
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q14: add comments before and after root element: update(/*, (comment {'database of articles on stock'}, ., comment {'end of database'} ))
+output=
+<!--database of articles on stock-->
+<articles>
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles><!--end of database-->
+
+Q15: delete all articles, only retaining their prize: update(//article, prize)
+output=
+<articles>
+    <prize>10.0</prize>
+    <prize>20.0</prize>
+</articles>
+
+Q16: wrap each article into a new element with a derived attribute: update(//article, <envelope total='{prize * quantity}'>{.}</envelope>)
+output=
+<articles>
+    <envelope total="1000">
+        <article name="chair" onStock="50">
+            <prize>10.0</prize>
+            <quantity>100</quantity>
+        </article>
+    </envelope>
+    <envelope total="4000">
+        <article name="table" onStock="30">
+            <prize>20.0</prize>
+            <quantity>200</quantity>
+        </article>
+    </envelope>
+</articles>
+
+Q17: add a summary element to each article: update(//article/*[1], (<summary total='{../prize * ../quantity}'></summary>, .))
+output=
+<articles>
+    <article name="chair" onStock="50">
+        <summary total="1000"/>
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30">
+        <summary total="4000"/>
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q18: add item number ID comment before each article: update(//article, (comment {index-of(../*, .)}, .))
+output=
+<articles>
+    <!--1-->
+    <article name="chair" onStock="50">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <!--2-->
+    <article name="table" onStock="30">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>
+
+Q19: add item number ID attribute to each article: update(//article/*[1], (., attribute {'id'} {index-of(../../*, ..)} ))
+output=
+<articles>
+    <article name="chair" onStock="50" id="1">
+        <prize>10.0</prize>
+        <quantity>100</quantity>
+    </article>
+    <article name="table" onStock="30" id="2">
+        <prize>20.0</prize>
+        <quantity>200</quantity>
+    </article>
+</articles>

@@ -1,0 +1,65 @@
+
+fire-xquery - Nux XQuery test tool with optional schema validation.
+
+Usage: fire-xquery [OPTION]... [FILE]...
+
+Option names can be abbreviated as long as they remain unambigous.
+Option cardinalities: '?' = 0..1, '*' = 0..N, '+' = 1..N, 'def' = default.
+
+Help options:
+  ? --version             Display the version of this program and exit.
+  ? --help                Print this help page and exit.
+
+Query options:
+  + --query={STRING}|FILE The XQuery to execute.
+  ? --base=FILE           Resolve relative URIs found in the XQuery (def='.').
+  * --var=NAME:VALUE      Pass external variables to XQuery (def=none).
+
+Output options:
+  * --out=FILE|/dev/null  File(s) to serialize to (def=stdout).
+  ? --algo=w3c|wrap       Result sequence serialization algorithm (def=w3c).
+  ? --encoding=STRING     Character encoding to serialize with (def=UTF-8).
+  ? --indent=INT          Insert prettyprint indentation; disable=0 (def=4).
+
+Validation options for input documents:
+  ? --validate=wf|dtd|schema|relaxng|html  Set validation language (def=wf).
+  ? --schema=FILE         e.g. foo.dtd|foo.xsd|foo.rng (def=undefined).
+  ? --namespace=URI       Namespace of schema (def=undefined).
+
+Misc options:
+  ? --update={STRING}|FILE Apply update XQuery to each item in result sequence.
+  ? --xinclude            Perform W3C XInclude resolution on input files.
+  ? --strip               Remove whitespace-only text nodes from input files.
+  ? --noexternal          Disallow Java extension functions in XQuery.
+  ? --filterpath=STRING   Streaming path filter, e.g. '/a/b/c' (def=none).
+  ? --filterquery={STRING}|FILE XQuery transforming each filter match (def=.).
+  ? --debug               Print full stack trace on exception.
+
+Benchmarking options:
+  ? --runs=INT            Repeat outer loop N times (def=1).
+  ? --iterations=INT      Repeat inner loop M times (def=1).
+  ? --docpoolcapacity=INT Allow at most N MB memory for document pool (def=0).
+  ? --docpoolcompression=-1..9    Use document ZLIB compression level (def=-1).
+  ? --nobuilderpool       Disable caching of SAX XMLReaders.
+  ? --explain             Print description of optimized XQuery plan.
+  ? --xomxpath            Use XOM's XPath engine instead of Nux's XPath engine.
+
+Examples:
+  cd samples/data
+  fire-xquery --query='{doc("periodic.xml")/PERIODIC_TABLE/ATOM[NAME="Zinc"]}'
+  fire-xquery --query='{declare namespace atom = "http://www.w3.org/2005/Atom"; doc("http://www.tbray.org/ongoing/ongoing.atom")/atom:feed/atom:entry/atom:title}'
+  fire-xquery --query='{count(//*)}' *.xml
+  fire-xquery --query='{count(//*)}' *.xml.bnux
+  fire-xquery --algo=wrap --query='{//node(), //@*, "Hello World!"}' p2pio.xml
+  fire-xquery --query=../xmark/q09.xq ../xmark/auction-0.01.xml --out=/tmp/results.out
+  fire-xquery --var=x:2 --var=y:5 --query='{declare variable $x external; declare variable $y external; $x * $y}'
+  fire-xquery --query='{/receive/timeout}' --update='{declare namespace system = "java:java.lang.System"; system:currentTimeMillis() + 10000}' p2pio.xml
+  fire-xquery --xinclude --query='{.}' xinclude.xml
+  fire-xquery --query=../fulltext/q2-06.xq ../fulltext/full-text.xml
+  fire-xquery --validate=html --query='{//*:img/string(@src)}' ../../doc/index.html
+  fire-xquery --query='{.}' --validate=relaxng --debug --schema=../data-atom/atom.rng ../data-atom/ongoing.xml
+  fire-xquery --query='{.}' --validate=schema --namespace='http://openuri.org/easypo' --schema=ns-order.xsd ns-order.xml
+  fire-xquery --query='{declare namespace util = "java:nux.xom.pool.FileUtil"; <files> {for $uri in util:listFiles("../shakespeare", false(), "*.xml", "") let $kills := count(saxon:discard-document(doc(string($uri)))//LINE[contains(., "kill")]) order by $kills return <file><name>{$uri}</name> <killCount>{$kills}</killCount></file> }</files>}'
+  fire-xquery --query='{.}' --validate=schema --namespace='http://openuri.org/easypo' --schema=ns-order.xsd ns-order.xml --out=/dev/null --iter=0 --runs=100000
+  fire-xquery --query='{count(doc("periodic.xml")//*)}' --out=/dev/null --indent=0 --iter=5000 --runs=5 --docpoolcapacity=100 --explain
+

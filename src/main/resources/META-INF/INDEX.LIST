@@ -1,0 +1,24 @@
+JarIndex-Version: 1.0
+
+nux.jar
+net
+net/sf
+net/sf/saxon
+net/sf/saxon/xom
+nux
+nux/xom
+nux/xom/binary
+nux/xom/io
+nux/xom/pool
+nux/xom/sandbox
+nux/xom/sandbox/doc-files
+nux/xom/tests
+nux/xom/tests/doc-files
+nux/xom/xquery
+nux/xom/xquery/doc-files
+org
+org/apache
+org/apache/lucene
+org/apache/lucene/index
+org/apache/lucene/index/memory
+

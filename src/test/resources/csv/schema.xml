@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema>
+<table name="a.csv">
+<column name="col1" type="VARCHAR"/>
+<column name=" col2" type="VARCHAR"/>
+<column name=" col3" type="DATE"/>
+</table>
+</schema>

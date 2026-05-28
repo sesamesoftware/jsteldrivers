@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<AUDIT auditor="Roger Beauchamp" auditorid="27782" elapsed_time="1185" form="3426" id="1065197" locid="73615" locname="Dunkin 310245" manager="Alycia Lindstrom" round="STAR-PM Standard" start_time="2019-04-15 11:35:45" stop_time="2019-04-15 11:55:31" type="Audit" workorder_id="1306597" workorder_salesforce_id="WO201902-282445">
+    <GENERAL_COMMENTS/>
+    <DEPARTMENT dept_id="104683" dept_name="PM Standard-Qualifying Questions">
+        <ITEM dept_id_b="104683" dept_name_b="PM Standard-Qualifying Questions" fqid="242231" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1570" question_code="001" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104683" dept_name_b="PM Standard-Qualifying Questions" fqid="242223" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1778" question_code="002" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="104682" dept_name="Location Information">
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242226" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1623" question_code="003" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242200" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1673" question_code="007" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242263" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1937" question_code="007h" question_type="True/False">
+            <ANSWER>No</ANSWER>
+            <COMMENT><![CDATA[Will be completed during the next PM visit]]></COMMENT>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242177" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1939" question_code="007k" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac997" fqacid="302910" text="Professional Dawn"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac998" fqacid="303265" text="CQ Quat Sanitizer"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1000" fqacid="302970" text="CQCSC 10# Sanitizer"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1001" fqacid="303116" text="PG 3n1/Proline"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1002" fqacid="303093" text="PG Multipurpose/Proline Floor Cleaner/Tide"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1003" fqacid="303208" text="Comet (All Types of Brand)"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1006" fqacid="303107" text="Heavy Duty Degreaser"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac1009" fqacid="303111" text="Safeguard Hand Soap"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242120" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2047" question_code="007l" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242204" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2670" question_code="007m" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac064" fqacid="302935" text="YES"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242250" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1387" question_code="008" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242148" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1667" question_code="008a" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac627" fqacid="303067" text="3-Comp PM completed"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242107" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2008" question_code="008b" question_type="Multiple Choice">
+            <ANSWER><![CDATA[2000]]></ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242216" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2007" question_code="009b" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242179" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1530" question_code="009g" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242182" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1458" question_code="012" question_type="True/False">
+            <ANSWER>No</ANSWER>
+            <COMMENT><![CDATA[N/A-CQ Chlorine not required]]></COMMENT>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242254" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1550" question_code="013d" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242199" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2004" question_code="015a" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242215" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2052" question_code="015d" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242160" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1676" question_code="015e" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac657" fqacid="303381" text="Mop Sink PM completed"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242112" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1950" question_code="015f" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242168" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2349" question_code="015g1" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242155" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1952" question_code="015z" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242186" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2051" question_code="028t" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242096" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1507" question_code="028u" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242099" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1506" question_code="028v" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242114" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1579" question_code="028v3" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242259" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1390" question_code="028y" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242127" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1384" question_code="028y1" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242187" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1512" question_code="028z" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOpm039" fqacid="302979" text="Equipment Training"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242138" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1615" question_code="061" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242139" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2053" question_code="062" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242174" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1451" question_code="063" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242265" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1404" question_code="068" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242191" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1917" question_code="080" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac919" fqacid="302993" text="Back of the House"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac916" fqacid="302922" text="Dining Area"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242173" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1918" question_code="081" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="302995" text="NONE"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242166" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1919" question_code="082" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="303378" text="NONE"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242181" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1920" question_code="083" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="302997" text="NONE"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242198" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1921" question_code="084" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="303421" text="NONE"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242257" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1922" question_code="085" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="303303" text="NONE"/>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242105" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1931" question_code="090" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242189" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1466" question_code="074" question_type="True/False">
+            <ANSWER>Yes</ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242153" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1777" question_code="075" question_type="Data Capture">
+            <ANSWER><![CDATA[replaced water screens labels, stickers,flags, red discharge hose and tested systems]]></ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104682" dept_name_b="Location Information" fqid="242238" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2332" question_code="073a" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac1011" fqacid="303311" text="7 - Extremely satisfied"/>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="104674" dept_name="Front of the House">
+        <ITEM dept_id_b="104674" dept_name_b="Front of the House" fqid="242219" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1715" question_code="029a" question_type="Data Capture">
+            <ANSWER><![CDATA[0]]></ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="104692" dept_name="Back of the House">
+        <ITEM dept_id_b="104692" dept_name_b="Back of the House" fqid="242167" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1716" question_code="029b" question_type="Data Capture">
+            <ANSWER><![CDATA[3]]></ANSWER>
+        </ITEM>
+        <ITEM dept_id_b="104692" dept_name_b="Back of the House" fqid="242103" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1775" question_code="045" question_type="Data Capture">
+            <ANSWER><![CDATA[0]]></ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="105031" dept_name="Back of the House Equipment 1">
+        <ITEM dept_id_b="105031" dept_name_b="Back of the House Equipment 1" fqid="242130" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2006" question_code="030" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac745" fqacid="302969" text="2 button-SS"/>
+        </ITEM>
+        <ITEM dept_id_b="105031" dept_name_b="Back of the House Equipment 1" fqid="242137" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1633" question_code="031" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac770" fqacid="303162" text="Closed"/>
+        </ITEM>
+        <ITEM dept_id_b="105031" dept_name_b="Back of the House Equipment 1" fqid="242271" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1634" question_code="032" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac791" fqacid="303074" text="Air-gap"/>
+        </ITEM>
+        <ITEM dept_id_b="105031" dept_name_b="Back of the House Equipment 1" fqid="242239" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1635" question_code="033" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac897" fqacid="303270" text="0.008-Olive Green"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac797" fqacid="303110" text="0.011-Black (small)"/>
+        </ITEM>
+        <ITEM dept_id_b="105031" dept_name_b="Back of the House Equipment 1" fqid="242134" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1954" question_code="033a" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="105003" dept_name="Back of the House Equipment 2">
+        <ITEM dept_id_b="105003" dept_name_b="Back of the House Equipment 2" fqid="242130" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2006" question_code="030" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac745" fqacid="302969" text="2 button-SS"/>
+        </ITEM>
+        <ITEM dept_id_b="105003" dept_name_b="Back of the House Equipment 2" fqid="242137" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1633" question_code="031" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac770" fqacid="303162" text="Closed"/>
+        </ITEM>
+        <ITEM dept_id_b="105003" dept_name_b="Back of the House Equipment 2" fqid="242271" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1634" question_code="032" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac791" fqacid="303074" text="Air-gap"/>
+        </ITEM>
+        <ITEM dept_id_b="105003" dept_name_b="Back of the House Equipment 2" fqid="242239" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1635" question_code="033" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac806" fqacid="303050" text="0.030-Peach"/>
+            <SELECTED_ANSWER_CHOICE code="TSOac798" fqacid="303222" text="0.012-Light Gray"/>
+        </ITEM>
+        <ITEM dept_id_b="105003" dept_name_b="Back of the House Equipment 2" fqid="242134" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1954" question_code="033a" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="105026" dept_name="Back of the House Equipment 3">
+        <ITEM dept_id_b="105026" dept_name_b="Back of the House Equipment 3" fqid="242130" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2006" question_code="030" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac787" fqacid="303355" text="SFGD HS Daansan dispenser"/>
+        </ITEM>
+        <ITEM dept_id_b="105026" dept_name_b="Back of the House Equipment 3" fqid="242137" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1633" question_code="031" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac776" fqacid="303257" text="Neither"/>
+        </ITEM>
+        <ITEM dept_id_b="105026" dept_name_b="Back of the House Equipment 3" fqid="242271" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1634" question_code="032" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac776" fqacid="303233" text="Neither"/>
+        </ITEM>
+        <ITEM dept_id_b="105026" dept_name_b="Back of the House Equipment 3" fqid="242239" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1635" question_code="033" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="303012" text="None"/>
+        </ITEM>
+        <ITEM dept_id_b="105026" dept_name_b="Back of the House Equipment 3" fqid="242134" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1954" question_code="033a" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="104671" dept_name="Restroom">
+        <ITEM dept_id_b="104671" dept_name_b="Restroom" fqid="242266" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1717" question_code="029c" question_type="Data Capture">
+            <ANSWER><![CDATA[1]]></ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+    <DEPARTMENT dept_id="105022" dept_name="Restroom Equipment 1">
+        <ITEM dept_id_b="105022" dept_name_b="Restroom Equipment 1" fqid="242130" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="2006" question_code="030" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac787" fqacid="303355" text="SFGD HS Daansan dispenser"/>
+        </ITEM>
+        <ITEM dept_id_b="105022" dept_name_b="Restroom Equipment 1" fqid="242137" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1633" question_code="031" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac776" fqacid="303257" text="Neither"/>
+        </ITEM>
+        <ITEM dept_id_b="105022" dept_name_b="Restroom Equipment 1" fqid="242271" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1634" question_code="032" question_type="Multiple Choice">
+            <SELECTED_ANSWER_CHOICE code="TSOac776" fqacid="303233" text="Neither"/>
+        </ITEM>
+        <ITEM dept_id_b="105022" dept_name_b="Restroom Equipment 1" fqid="242239" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1635" question_code="033" question_type="Select All That Apply">
+            <SELECTED_ANSWER_CHOICE code="TSOac689" fqacid="303012" text="None"/>
+        </ITEM>
+        <ITEM dept_id_b="105022" dept_name_b="Restroom Equipment 1" fqid="242134" is_admin_question="No" is_focus_question="No" is_info_only="No" qid="1954" question_code="033a" question_type="True/False">
+            <ANSWER>No</ANSWER>
+        </ITEM>
+    </DEPARTMENT>
+</AUDIT>

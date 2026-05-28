@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+	<table name="form" file="Source/Form.xml" path="/FORM/" >
+		<column name="FORM_ID" type="int" path="@formid" />
+		<column name="FORM_NAME" type="VARCHAR" path="@formname" />
+		<column name="FORM_TYPE" type="VARCHAR" path="@formtype" />
+		<column name="REPORT_TITLE" type="VARCHAR" path="FORMDATA/REPORT_TITLE" />
+		<column name="VERSION_ID" type="int" path="FORMDATA/VERSION" />
+		<column name="STATUS_ID" type="int" path="FORMDATA/STATUS_ID" />
+		<column name="CREATED_BY" type="int" path="FORMDATA/CREATED_BY" />
+		<column name="CREATED_DATE" type="DATETIME" path="FORMDATA/CREATED_DATE" />
+		<column name="IS_NA_ALLOWED" type="int" path="FORMDATA/IS_NA_ALLOWED" />
+		<column name="IS_NO_ALLOWED" type="int" path="FORMDATA/IS_NO_ALLOWED" />
+		<column name="WO_ACTIVITY_TYPE_ID" type="int" path="FORMDATA/WORKORDER_ACTIVITY_TYPE_ID" />
+
+	</table>
+</schema>

@@ -1,0 +1,457 @@
+Environment: java 1.5.0_04, Java HotSpot(TM) Server VM, Sun Microsystems Inc., Linux, 2.4.20-43.9.legacysmp, i386
+Now running java nux.xom.tests.XQueryBenchmark 10 2 cache samples/data/auction-0.1.xml ../nux/samples/xmark/q01.xq ../nux/samples/xmark/q02.xq ../nux/samples/xmark/q03.xq ../nux/samples/xmark/q04.xq ../nux/samples/xmark/q05.xq ../nux/samples/xmark/q06.xq ../nux/samples/xmark/q07.xq ../nux/samples/xmark/q08.xq ../nux/samples/xmark/q09.xq ../nux/samples/xmark/q10.xq ../nux/samples/xmark/q11.xq ../nux/samples/xmark/q12.xq ../nux/samples/xmark/q13.xq ../nux/samples/xmark/q14.xq ../nux/samples/xmark/q15.xq ../nux/samples/xmark/q16.xq ../nux/samples/xmark/q17.xq ../nux/samples/xmark/q18.xq ../nux/samples/xmark/q19.xq ../nux/samples/xmark/q20.xq 
+Now reading samples/data/auction-0.1.xml ms=2280
+Now reading ../nux/samples/xmark/q01.xq
+query = (: Q1.Return the name of the person with ID `person0' registered in North America. :)
+
+for    $b in /site/people/person[@id="person0"]
+return $b/name/text()
+
+   ms=937, queries/sec=10.6723585
+Now reading ../nux/samples/xmark/q02.xq
+query = (: Q2. Return the initial increases of all open auctions. :)
+
+for $b in /site/open_auctions/open_auction
+return <increase> {$b/bidder[1]/increase/text()} </increase>
+
+   ms=1541, queries/sec=6.4892926
+Now reading ../nux/samples/xmark/q03.xq
+query = (: Q3. Return the IDs of all open auctions whose current :)
+(:     increase is at least twice as high as the initial increase. :)
+
+for    $b in /site/open_auctions/open_auction
+where  $b/bidder[1]/increase/text() * 2 <= $b/bidder[last()]/increase/text()
+return <increase first="{$b/bidder[1]/increase/text()}"
+                 last="{$b/bidder[last()]/increase/text()}"/>
+
+   ms=1251, queries/sec=7.9936047
+Now reading ../nux/samples/xmark/q04.xq
+query = (: Q4. List the reserves of those open auctions where a :)
+(:     certain person issued a bid before another person. :)
+
+for    $b in /site/open_auctions/open_auction
+where  $b/bidder/personref[@person="person18829"] <<
+       $b/bidder/personref[@person="person10487"]
+return <history> $b/reserve/text() </history>
+
+   ms=302, queries/sec=33.112583
+Now reading ../nux/samples/xmark/q05.xq
+query = (: Q5.  How many sold items cost more than 40? :)
+
+count(for $i in /site/closed_auctions/closed_auction
+        where  $i/price/text() >= 40 
+        return $i/price)
+
+   ms=198, queries/sec=50.50505
+Now reading ../nux/samples/xmark/q06.xq
+query = (: Q6. How many items are listed on all continents? :)
+
+for    $b in /site/regions
+return count ($b//item)
+
+   ms=296, queries/sec=33.783783
+Now reading ../nux/samples/xmark/q07.xq
+query = (: Q7. How many pieces of prose are in our database? :)
+
+for $p in /site
+return count($p//description) + count($p//annotation) + count($p//email)
+   ms=1782, queries/sec=5.6116724
+Now reading ../nux/samples/xmark/q08.xq
+query = 
+(: Q8. List the names of persons and the number of items they bought. :)
+(:     (joins person, closed_auction)  :)
+
+for $p in /site/people/person
+let $a := for $t in /site/closed_auctions/closed_auction
+             where $t/buyer/@person = $p/@id
+             return $t
+return <item person="{$p/name/text()}"> {count ($a)} </item>
+
+   ms=140878, queries/sec=0.0709834
+Now reading ../nux/samples/xmark/q09.xq
+query = (: Q9. List the names of persons and the names of the items they bought :)
+(:     in Europe.  (joins person, closed\_auction, item) :)
+
+for $p in /site/people/person
+let$a := for $t in /site/closed_auctions/closed_auction
+          let$n := for $t2 in /site/regions/europe/item
+                       where  $t/itemref/@item = $t2/@id
+                       return $t2
+             where $p/@id = $t/buyer/@person
+             return <item> {$n/name/text()} </item>
+return <person name="{$p/name/text()}"> {$a} </person>
+   ms=163957, queries/sec=0.0609916
+Now reading ../nux/samples/xmark/q10.xq
+query = (: Q10. List all persons according to their interest; :)
+(:      use French markup in the result. :)
+
+for $i in distinct-values(
+          /site/people/person/profile/interest/@category)
+let$p := for    $t in /site/people/person
+          where  $t/profile/interest/@category = $i
+            return <personne>
+                <statistiques>
+                        <sexe> {$t/gender/text()} </sexe>,
+                        <age> {$t/age/text()} </age>,
+                        <education> {$t/education/text()}</education>,
+                        <revenu> {$t/income/text()} </revenu>
+                </statistiques>,
+                <coordonnees>
+                        <nom> {$t/name/text()} </nom>,
+                        <rue> {$t/street/text()} </rue>,
+                        <ville> {$t/city/text()} </ville>,
+                        <pays> {$t/country/text()} </pays>,
+                        <reseau>
+                                <courrier> {$t/email/text()} </courrier>,
+                                <pagePerso> {$t/homepage/text()}</pagePerso>
+                        </reseau>,
+                </coordonnees>
+                <cartePaiement> {$t/creditcard/text()}</cartePaiement>    
+              </personne>
+return <categorie>
+        <id> {$i} </id>,
+        {$p}
+      </categorie>
+
+   ms=26902, queries/sec=0.37171957
+Now reading ../nux/samples/xmark/q11.xq
+query = (: Q11. For each person, list the number of items currently on sale whose :)
+(:      price does not exceed 0.02% of the person's income. :)
+
+for $p in /site/people/person
+let$l := for $i in /site/open_auctions/open_auction/initial
+          where $p/profile/@income > (5000 * $i/text())
+          return $i
+return <items name="{$p/name/text()}"> {count ($l)} </items>
+
+   ms=191898, queries/sec=0.05211102
+Now reading ../nux/samples/xmark/q12.xq
+query = (: Q12.  For each richer-than-average person, list the number of items :) 
+(:       currently on sale whose price does not exceed 0.02% of the :) 
+(:       person's income. :)
+
+for $p in /site/people/person
+let $l := for $i in /site/open_auctions/open_auction/initial
+          where $p/profile/@income > (5000 * $i/text())
+          return $i
+where  $p/profile/@income > 50000
+return <items person="{$p/name/text()}"> {count ($l)} </items>
+
+   ms=44914, queries/sec=0.22264773
+Now reading ../nux/samples/xmark/q13.xq
+query = (: Q13. List the names of items registered in Australia along with their descriptions. :)
+
+for $i in /site/regions/australia/item
+return <item name="{$i/name/text()}"> {$i/description} </item>
+
+   ms=822, queries/sec=12.16545
+Now reading ../nux/samples/xmark/q14.xq
+query = (: Q14. Return the names of all items whose description contains the word `gold'. :)
+
+for $i in /site//item
+where contains ($i/description,"gold")
+return $i/name/text()
+
+   ms=1239, queries/sec=8.071025
+Now reading ../nux/samples/xmark/q15.xq
+query = (: Q15. Print the keywords in emphasis in annotations of closed auctions. :)
+
+for $a in /site/closed_auctions/closed_auction/annotation/
+          description/parlist/listitem/parlist/listitem/text/emph/keyword/text()
+return <text> {$a} </text>
+
+   ms=81, queries/sec=123.45679
+Now reading ../nux/samples/xmark/q16.xq
+query = (: Q16. Return the IDs of those auctions :)
+(:      that have one or more keywords in emphasis. (cf. Q15) :)
+
+for $a in /site/closed_auctions/closed_auction
+where not( empty ($a/annotation/description/parlist/listitem/parlist/
+                     listitem/text/emph/keyword/text()))
+return <person id="{$a/seller/@person}" />
+
+   ms=108, queries/sec=92.59259
+Now reading ../nux/samples/xmark/q17.xq
+query = (: Q17. Which persons don't have a homepage? :)
+
+for    $p in /site/people/person
+where  empty($p/homepage/text())
+return <person name="{$p/name/text()}"/>
+
+   ms=442, queries/sec=22.624434
+Now reading ../nux/samples/xmark/q18.xq
+query = (: Q18.Convert the currency of the reserve of all open auctions to :)
+(:     another currency. :)
+
+declare function local:convert ($v)
+{
+   2.20371 * $v    (: convert Dfl to Euro :)
+};
+
+for    $i in /site/open_auctions/open_auction
+return local:convert($i/reserve)
+
+
+   ms=1156, queries/sec=8.650519
+Now reading ../nux/samples/xmark/q19.xq
+query = (: Q19. Give an alphabetically ordered list of all :)
+(:      items along with their location. :)
+
+for    $b in /site/regions//item
+let   $k := $b/name/text()
+order by $k
+return <item name="{$k}"> {$b/location/text()} </item>
+
+   ms=1358, queries/sec=7.36377
+Now reading ../nux/samples/xmark/q20.xq
+query = (: Q20. Group customers by their :)
+(:      income and output the cardinality of each group. :)
+
+<result>
+ <preferred>
+  {count (/site/people/person/profile[@income >= 100000])}
+ </preferred>,
+ <standard>
+  {count (/site/people/person/profile[@income < 100000
+                                                        and @income >= 30000])}
+ </standard>,
+ <challenge> 
+  {count (/site/people/person/profile[@income < 30000])}
+ </challenge>,
+ <na>
+  {count (for    $p in /site/people/person
+         where  empty($p/@income)
+         return $p)}
+ </na>
+</result>
+   ms=478, queries/sec=20.920504
+done with repetition 0
+
+
+Now reading ../nux/samples/xmark/q01.xq
+query = (: Q1.Return the name of the person with ID `person0' registered in North America. :)
+
+for    $b in /site/people/person[@id="person0"]
+return $b/name/text()
+
+   ms=46, queries/sec=217.3913
+Now reading ../nux/samples/xmark/q02.xq
+query = (: Q2. Return the initial increases of all open auctions. :)
+
+for $b in /site/open_auctions/open_auction
+return <increase> {$b/bidder[1]/increase/text()} </increase>
+
+   ms=261, queries/sec=38.314175
+Now reading ../nux/samples/xmark/q03.xq
+query = (: Q3. Return the IDs of all open auctions whose current :)
+(:     increase is at least twice as high as the initial increase. :)
+
+for    $b in /site/open_auctions/open_auction
+where  $b/bidder[1]/increase/text() * 2 <= $b/bidder[last()]/increase/text()
+return <increase first="{$b/bidder[1]/increase/text()}"
+                 last="{$b/bidder[last()]/increase/text()}"/>
+
+   ms=368, queries/sec=27.173912
+Now reading ../nux/samples/xmark/q04.xq
+query = (: Q4. List the reserves of those open auctions where a :)
+(:     certain person issued a bid before another person. :)
+
+for    $b in /site/open_auctions/open_auction
+where  $b/bidder/personref[@person="person18829"] <<
+       $b/bidder/personref[@person="person10487"]
+return <history> $b/reserve/text() </history>
+
+   ms=265, queries/sec=37.73585
+Now reading ../nux/samples/xmark/q05.xq
+query = (: Q5.  How many sold items cost more than 40? :)
+
+count(for $i in /site/closed_auctions/closed_auction
+        where  $i/price/text() >= 40 
+        return $i/price)
+
+   ms=80, queries/sec=125.0
+Now reading ../nux/samples/xmark/q06.xq
+query = (: Q6. How many items are listed on all continents? :)
+
+for    $b in /site/regions
+return count ($b//item)
+
+   ms=211, queries/sec=47.393368
+Now reading ../nux/samples/xmark/q07.xq
+query = (: Q7. How many pieces of prose are in our database? :)
+
+for $p in /site
+return count($p//description) + count($p//annotation) + count($p//email)
+   ms=1744, queries/sec=5.733945
+Now reading ../nux/samples/xmark/q08.xq
+query = 
+(: Q8. List the names of persons and the number of items they bought. :)
+(:     (joins person, closed_auction)  :)
+
+for $p in /site/people/person
+let $a := for $t in /site/closed_auctions/closed_auction
+             where $t/buyer/@person = $p/@id
+             return $t
+return <item person="{$p/name/text()}"> {count ($a)} </item>
+
+   ms=142921, queries/sec=0.06996872
+Now reading ../nux/samples/xmark/q09.xq
+query = (: Q9. List the names of persons and the names of the items they bought :)
+(:     in Europe.  (joins person, closed\_auction, item) :)
+
+for $p in /site/people/person
+let$a := for $t in /site/closed_auctions/closed_auction
+          let$n := for $t2 in /site/regions/europe/item
+                       where  $t/itemref/@item = $t2/@id
+                       return $t2
+             where $p/@id = $t/buyer/@person
+             return <item> {$n/name/text()} </item>
+return <person name="{$p/name/text()}"> {$a} </person>
+   ms=166712, queries/sec=0.059983682
+Now reading ../nux/samples/xmark/q10.xq
+query = (: Q10. List all persons according to their interest; :)
+(:      use French markup in the result. :)
+
+for $i in distinct-values(
+          /site/people/person/profile/interest/@category)
+let$p := for    $t in /site/people/person
+          where  $t/profile/interest/@category = $i
+            return <personne>
+                <statistiques>
+                        <sexe> {$t/gender/text()} </sexe>,
+                        <age> {$t/age/text()} </age>,
+                        <education> {$t/education/text()}</education>,
+                        <revenu> {$t/income/text()} </revenu>
+                </statistiques>,
+                <coordonnees>
+                        <nom> {$t/name/text()} </nom>,
+                        <rue> {$t/street/text()} </rue>,
+                        <ville> {$t/city/text()} </ville>,
+                        <pays> {$t/country/text()} </pays>,
+                        <reseau>
+                                <courrier> {$t/email/text()} </courrier>,
+                                <pagePerso> {$t/homepage/text()}</pagePerso>
+                        </reseau>,
+                </coordonnees>
+                <cartePaiement> {$t/creditcard/text()}</cartePaiement>    
+              </personne>
+return <categorie>
+        <id> {$i} </id>,
+        {$p}
+      </categorie>
+
+   ms=25675, queries/sec=0.38948396
+Now reading ../nux/samples/xmark/q11.xq
+query = (: Q11. For each person, list the number of items currently on sale whose :)
+(:      price does not exceed 0.02% of the person's income. :)
+
+for $p in /site/people/person
+let$l := for $i in /site/open_auctions/open_auction/initial
+          where $p/profile/@income > (5000 * $i/text())
+          return $i
+return <items name="{$p/name/text()}"> {count ($l)} </items>
+
+   ms=194983, queries/sec=0.051286522
+Now reading ../nux/samples/xmark/q12.xq
+query = (: Q12.  For each richer-than-average person, list the number of items :) 
+(:       currently on sale whose price does not exceed 0.02% of the :) 
+(:       person's income. :)
+
+for $p in /site/people/person
+let $l := for $i in /site/open_auctions/open_auction/initial
+          where $p/profile/@income > (5000 * $i/text())
+          return $i
+where  $p/profile/@income > 50000
+return <items person="{$p/name/text()}"> {count ($l)} </items>
+
+   ms=46667, queries/sec=0.21428418
+Now reading ../nux/samples/xmark/q13.xq
+query = (: Q13. List the names of items registered in Australia along with their descriptions. :)
+
+for $i in /site/regions/australia/item
+return <item name="{$i/name/text()}"> {$i/description} </item>
+
+   ms=521, queries/sec=19.193857
+Now reading ../nux/samples/xmark/q14.xq
+query = (: Q14. Return the names of all items whose description contains the word `gold'. :)
+
+for $i in /site//item
+where contains ($i/description,"gold")
+return $i/name/text()
+
+   ms=1108, queries/sec=9.02527
+Now reading ../nux/samples/xmark/q15.xq
+query = (: Q15. Print the keywords in emphasis in annotations of closed auctions. :)
+
+for $a in /site/closed_auctions/closed_auction/annotation/
+          description/parlist/listitem/parlist/listitem/text/emph/keyword/text()
+return <text> {$a} </text>
+
+   ms=64, queries/sec=156.25
+Now reading ../nux/samples/xmark/q16.xq
+query = (: Q16. Return the IDs of those auctions :)
+(:      that have one or more keywords in emphasis. (cf. Q15) :)
+
+for $a in /site/closed_auctions/closed_auction
+where not( empty ($a/annotation/description/parlist/listitem/parlist/
+                     listitem/text/emph/keyword/text()))
+return <person id="{$a/seller/@person}" />
+
+   ms=89, queries/sec=112.35955
+Now reading ../nux/samples/xmark/q17.xq
+query = (: Q17. Which persons don't have a homepage? :)
+
+for    $p in /site/people/person
+where  empty($p/homepage/text())
+return <person name="{$p/name/text()}"/>
+
+   ms=363, queries/sec=27.548208
+Now reading ../nux/samples/xmark/q18.xq
+query = (: Q18.Convert the currency of the reserve of all open auctions to :)
+(:     another currency. :)
+
+declare function local:convert ($v)
+{
+   2.20371 * $v    (: convert Dfl to Euro :)
+};
+
+for    $i in /site/open_auctions/open_auction
+return local:convert($i/reserve)
+
+
+   ms=321, queries/sec=31.152647
+Now reading ../nux/samples/xmark/q19.xq
+query = (: Q19. Give an alphabetically ordered list of all :)
+(:      items along with their location. :)
+
+for    $b in /site/regions//item
+let   $k := $b/name/text()
+order by $k
+return <item name="{$k}"> {$b/location/text()} </item>
+
+   ms=1154, queries/sec=8.665511
+Now reading ../nux/samples/xmark/q20.xq
+query = (: Q20. Group customers by their :)
+(:      income and output the cardinality of each group. :)
+
+<result>
+ <preferred>
+  {count (/site/people/person/profile[@income >= 100000])}
+ </preferred>,
+ <standard>
+  {count (/site/people/person/profile[@income < 100000
+                                                        and @income >= 30000])}
+ </standard>,
+ <challenge> 
+  {count (/site/people/person/profile[@income < 30000])}
+ </challenge>,
+ <na>
+  {count (for    $p in /site/people/person
+         where  empty($p/@income)
+         return $p)}
+ </na>
+</result>
+   ms=423, queries/sec=23.640661
+done with repetition 1
+
+

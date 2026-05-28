@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<FORM formid="2652" formname="Warewash" formtype="Audit">
+    <FORMDATA>
+        <REPORT_TITLE><![CDATA[Procter & Gamble Professional Warewashing/Kitchen Service Report]]></REPORT_TITLE>
+        <VERSION_ID>2654</VERSION_ID>
+        <STATUS_ID>1</STATUS_ID>
+        <CREATED_BY>1</CREATED_BY>
+        <CREATED_DATE>2014-04-14 06:26:30</CREATED_DATE>
+        <IS_NA_ALLOWED>1</IS_NA_ALLOWED>
+        <IS_NO_ALLOWED>0</IS_NO_ALLOWED>
+        <WORKORDER_ACTIVITY_TYPE_ID>1</WORKORDER_ACTIVITY_TYPE_ID>
+    </FORMDATA>
+    <DEPARTMENTS>
+        <DEPARTMENT dept_id="23436" dept_name="Customer Survey"
+            <ITEM fqid="115516" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="901" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1 to 5, how satisfied are you with the performance of the products?]]></QUESTION>
+                <POLICY><![CDATA[This should be ranked and answered by the manager on duty and the person that is participating in the exit discussion. The scale should be 1-5 (1 Poor, 2 Fair, 3 Average, 4 Good, 5 Excellent)]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115543" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="904" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1 to 5, how satisfied are you with the professionalism?]]></QUESTION>
+                <POLICY><![CDATA[This should be ranked and answered by the manager on duty and the person that is participating in the exit discussion. The scale should be 1-5 (1 Poor, 2 Fair, 3 Average, 4 Good, 5 Excellent)]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115544" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="903" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1 to 5, how satisfied are you with the timeliness and level of service?]]></QUESTION>
+                <POLICY><![CDATA[This should be ranked and answered by the manager on duty and the person that is participating in the exit discussion. The scale should be 1-5 (1 Poor, 2 Fair, 3 Average, 4 Good, 5 Excellent)]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115554" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="902" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1 to 5, how satisfied are you with the ability to resolve problems?]]></QUESTION>
+                <POLICY><![CDATA[This should be ranked and answered by the manager on duty and the person that is participating in the exit discussion. The scale should be 1-5 (1 Poor, 2 Fair, 3 Average, 4 Good, 5 Excellent)]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23437" dept_name="Dish Machine" repeating="yes">
+            <ITEM fqid="115484" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="375" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the overflows good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the overflows in the machine. If they are working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115486" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="105" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the machine manufacturer?]]></QUESTION>
+                <POLICY><![CDATA[Please mark question with a green check and select the appropriate manufacturer from the prepared comments.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115490" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="354" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the final rinse temperature?]]></QUESTION>
+                <POLICY><![CDATA[If the final rinse temp is not reaching 180*F select the reason why.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115492" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="355" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the fresh water feedback rate good?]]></QUESTION>
+                <POLICY><![CDATA[If the fresh water feedback rate is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115494" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="108" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Does the machine have an internal chemical dispensing system?]]></QUESTION>
+                <POLICY><![CDATA[If yes, please click to place a green check in the box. If no, click to place a red X and select all comments that apply.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115502" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="302" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the stemware good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the stemware is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115503" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="374" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the final rinse solenoid good?]]></QUESTION>
+                <POLICY><![CDATA[If the solenoid valve is working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115504" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="353" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the power rinse temperature?]]></QUESTION>
+                <POLICY><![CDATA[If the power rinse temp is not good, click on the note pad icon and select the appropriate reasons.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115508" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="378" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the conveyor good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the conveyor to determine it is working properly. Check conveyor dogs and table clearance to make sure racks are moving through the machine without issue. If the conveyor is working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115509" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="379" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the curtains/racks good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the curtains and racks to check for wear and breakage. If curtains and racks are in good condition, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115513" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="301" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the condition of the water/iced tea glasses good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the water/iced tea glasses is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115522" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="351" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the pre-wash temperature?]]></QUESTION>
+                <POLICY><![CDATA[If the pre-wash temp is not good, select the appropriate reason.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115525" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="206" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using Chlorine Sanitizer in the dish machine?]]></QUESTION>
+                <POLICY/>
+            </ITEM>
+            <ITEM fqid="115526" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="377" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the rinse saver good?]]></QUESTION>
+                <POLICY><![CDATA[Visually check the rinse saver tray and determine if it is carrying the proper amount of final rinse water out of the machine. If it is working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115530" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="303" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the condition of the plates/saucers good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the plates/saucers is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115535" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="304" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of cups/bowls good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the cups/bowls is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115538" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="208" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the level of Quat Sanitizer?]]></QUESTION>
+                <POLICY/>
+            </ITEM>
+            <ITEM fqid="115541" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="107" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the model number of the machine?]]></QUESTION>
+                <POLICY><![CDATA[Answer question with a green check and then fill in the model number of the machine as a comment.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115545" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="372" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the wash arms/rinse arms good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the wash arms and rinse arms. If the wash arms/rinse arms are spinning freely, the orifices are free of debris and the end caps are secure place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115551" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="201" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using detergent in the dish machine?]]></QUESTION>
+                <POLICY><![CDATA[Tour laundry room and observe a sampling of all types of linen for any quality issues. Interview staff and management to determine any quality issues or concerns.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115556" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="371" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the fill valve functioning properly?]]></QUESTION>
+                <POLICY><![CDATA[If the fill valve is working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115558" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="109" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Does the customer have a water softener supplying the machine?]]></QUESTION>
+                <POLICY><![CDATA[Check with the manager, maintenance department to see if the account has a water softener and if it is in use and working properly. If the customer does have a water softener, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115559" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="110" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the water hardness in grains?]]></QUESTION>
+                <POLICY><![CDATA[Using the water test kit, obtain a water sample from the same source that feeds the machine. Follow the instructions included with the test kit to obtain]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115560" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="207" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the level of Chlorine Sanitizer?]]></QUESTION>
+                <POLICY><![CDATA[Test sanitizer level by exposing a chlorine test strip to the final rinse water. If the level is not above 50 ppm select all comments that apply.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115561" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="373" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the final rinse jets good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the final rinse jets. If the final rinse jets are in place and unbroken, the orifices are free of debris and are aligned properly place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115562" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="202" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[At what number of drops does the detergent titrate?]]></QUESTION>
+                <POLICY><![CDATA[Using the chemical titration kit, obtain a water sample from the machine wash tank. Follow the instructions included with the test kit to obtain and record the finding below. Value should be at prescribed dosing for selected detergent.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115564" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="205" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is this a high temperature machine?]]></QUESTION>
+                <POLICY/>
+            </ITEM>
+            <ITEM fqid="115565" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="305" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of flatware good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the flatware is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115567" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="352" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the wash tank temperature?]]></QUESTION>
+                <POLICY><![CDATA[If the wash tank temp is not good, select the appropriate reasons.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115568" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="376" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of the drain valve good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the drain valves and determine if they are in proper working condition. If they are working properly, place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115570" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="204" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the amount of rinse additive per rack?]]></QUESTION>
+                <POLICY><![CDATA[Enter the amount of rinse additive being injected in milliliters below.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115573" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="306" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[Is the condition of OTHER good?]]></QUESTION>
+                <POLICY><![CDATA[Explain OTHER, if there is no OTHER you may mark this question as N/A. If the condition of OTHER is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115575" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="203" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using rinse additive in the dish machine?]]></QUESTION>
+                <POLICY><![CDATA[Please check the box next to the appropriate rinse additive.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115580" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="106" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[What is the rack count on the machine?]]></QUESTION>
+                <POLICY><![CDATA[Click on the gray icon box and record the total rack count for this machine. Reset the rack counter to '0' after each visit.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23438" dept_name="Manual Ware Washing">
+            <ITEM fqid="115500" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="404" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using chlorine sanitizer for manual warewashing?]]></QUESTION>
+                <POLICY><![CDATA[Please select the appropriate sanitizer(s).]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115505" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="501" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the condition of the Pots/Pans/OTHER good?]]></QUESTION>
+                <POLICY><![CDATA[If the condition of the Pots/Pans/OTHER is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115510" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="401" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the Three Sink Product Dispenser working properly?]]></QUESTION>
+                <POLICY><![CDATA[Check the condition of the three sink dispenser. If the dispenser is working properly the click to place a check in the box. If not, click on the '+' and double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115512" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="406" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the level of Quat Sanitizer?]]></QUESTION>
+                <POLICY><![CDATA[Enter the ppm of Quat Sanitizer]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115532" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="408" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the Presoak Product Dispenser working properly?]]></QUESTION>
+                <POLICY><![CDATA[Check the condition of the presoak dispenser. If the dispenser is working properly the click to place a check in the box. If not, click on the '+' and double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115536" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="403" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the amount of detergent used for manual washing?]]></QUESTION>
+                <POLICY><![CDATA[Enter the amount of detergent being injected in ounces per gallon below.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115540" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="502" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the condition of the presoaked items good?]]></QUESTION>
+                <POLICY><![CDATA[Visually inspect the items being presoaked. Items should have gross food soils and staining easily removed. If the condition of the Presoaked items is good, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115549" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="407" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using a product for presoaking?]]></QUESTION>
+                <POLICY><![CDATA[Select the appropriate presoak product(s).]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115557" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="402" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the customer currently using detergent for manual washing?]]></QUESTION>
+                <POLICY><![CDATA[Please check the box next to the appropriate detergent.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115581" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="405" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the level of chlorine sanitizer used for manual washing?]]></QUESTION>
+                <POLICY><![CDATA[Test sanitizer level by exposing a QA test strip to the third sink water/sanitizer solution for 10 seconds.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23442" dept_name="Product Inventory">
+            <ITEM fqid="115485" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="812" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, All-Temp Rinse Additive (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115487" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="842" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Joy, Liquid Manual Pot & Pan Detergent (Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Liquid Manual Pot & Pan Detergent]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115491" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="815" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Low Temp Rinse Additive (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115493" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="821" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Chlorine Sanitizer (Liquid 2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115496" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="844" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Clean Quick, Liquid Quat Sanitizer Closed Loop (Liquid 3x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115497" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="834" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Oxy Presoak & Destainer (Powder 2x8 lb)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115498" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="853" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Comet Disinfecting/Sanitizer Spray (8x32 oz)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115501" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="838" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Conveyor Lube (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115506" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="804" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Low Temp Detergent(Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115507" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="805" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Low Temp Detergent (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115514" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="851" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Mr Clean Floor Cleaner Closed Loop (3x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115518" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="835" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Delimer (Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115520" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="803" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, All-Temp Detergent(Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115521" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="801" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Ultra All-Temp Detergent Plus(Liquid 2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115523" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="817" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Hard Water Rinse Additive (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115524" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="847" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Swiffer Wet Cloth Refill (12 per 12cs)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115527" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="802" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, All-Temp Detergent(Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115528" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="845" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Mr Clean Xpower Magic Eraser (30 count)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115531" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="837" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Streamline, Sanitizer Tablets (6x150 tablets)]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115533" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="816" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Hard Water Rinse Additive (Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115539" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="855" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Spic & Span Floor & Multi-Purpose Cleaner (4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115542" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="843" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Swifter, Duster w/Ext Handle (6 count)]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115547" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="832" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Silverware Presoak (Powder 2x7 lb)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115548" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="841" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Dawn, Pot & Pan Detergent Closed Loop (Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115550" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="836" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Bar Glass Detergent (Liquid 4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115563" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="811" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Ultra All-Temp Rinse Additive(Liquid 2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115566" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="822" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Chlorine Sanitizer (Liquid 5 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each bucket or bottle in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. If a product container has been opened DO NOT count it in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115571" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="831" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Luster Professional, Ultra Silverware Presoak (Liquid 2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115572" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="852" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Spic & Span 3-in-1 Closed Loop (2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115576" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="850" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Febreze Concentrate Closed Loop (2x1gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115577" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="854" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Swiffer Duster Refill (box)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened box in inventory. Product in an opened box should NOT be counted. Only count unopened boxes in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115578" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="848" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Febreze Deep Penetrator Concentrate (2x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115579" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="846" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Comet Disinfecting Bath Cleaner / Sanitizer (Closed Loop 3x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115582" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="856" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Comet Disinfecting Cleaner with Bleach (4x1 gal)?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. The bucket or bottle hooked up to the dispensing unit should NOT be counted. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115583" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="860" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Safeguard Foaming Hand Soap?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115584" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="863" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Safeguard Hand Soap Dispensers?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115585" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="861" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Safeguard Gel Hand Sanitizer?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115586" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="862" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[What is the inventory of Safeguard Liquid Hand Soap?]]></QUESTION>
+                <POLICY><![CDATA[Please count each unopened case in inventory. Product in an opened case should NOT be counted. Only count unopened cases in inventory.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23445" dept_name="General Kitchen">
+            <ITEM fqid="115488" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="601" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3 what are the conditions of the floors and walls?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGoodAlert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115511" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="604" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3, what are the conditions of the drains/grease traps?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGood Alert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115517" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="603" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3, what are the conditions of the stainless steel surfaces?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGood Alert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115537" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="602" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3, what are the conditions of the ovens and grills?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGood Alert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115546" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="606" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3, what are the conditions of the coolers/freezers?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGood Alert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115553" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="605" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[On a scale of 1-3, what is the condition of the deep fat fryer?]]></QUESTION>
+                <POLICY><![CDATA[Needs AttentionFairGood Alert the manager if the value is 1. Needs Attention.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23446" dept_name="General Customer Information">
+            <ITEM fqid="115489" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="102" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is this a regular service visit?]]></QUESTION>
+                <POLICY><![CDATA[If this is a regularly scheduled call, click to place a check in the box. If this is not a regular visit, click on the '+', then double click on the note pad and select the appropriate reason for this visit.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115495" is_admin_question="0" is_focus_question="0" is_info_only="1" question_code="104" question_type="Data Capture" typeid="3">
+                <QUESTION><![CDATA[How many machines are located at this site?]]></QUESTION>
+                <POLICY><![CDATA[Click on the gray icon box and enter the number of dish machines the location has. This should include any machine where we are dispensing chemicals. (Internal/external dispensers)]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115534" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="101" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is this a current, active P&G Warewashing customer?]]></QUESTION>
+                <POLICY><![CDATA[Please answer the question yes or no. If answered yes, go on to question 2. If no, pick from the predefined choices.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115552" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="103" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Was the manager on duty notified of your visit and were any item needing attention discussed?]]></QUESTION>
+                <POLICY><![CDATA[Upon arrival at the location meet with the highest ranking manager on duty to let them know you are on location and to determine if there are any specific issues need attention. Record any concerns and be sure to review your findings and resolutions upon completion of the call. if this step was completed, click to place a check in the box. If not, click on the '+' then double click on the note pad icon and select the appropriate answer.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+        <DEPARTMENT dept_id="23447" dept_name="Operator Procedures">
+            <ITEM fqid="115499" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="703" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for presoaking?]]></QUESTION>
+                <POLICY><![CDATA[Insure that the operator is using the prescribed presoaking method. Items should be presoaked with sufficient time with the correct presoaking product. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115515" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="705" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for tank water changing?]]></QUESTION>
+                <POLICY><![CDATA[Insure that the operator is changing the machine tank water, presoak solution and three sink solutions regularly to allow for successful washing and sanitation of items. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115519" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="702" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for prescrapping?]]></QUESTION>
+                <POLICY><![CDATA[Insure that operator is prescrapping items thoroughly and being careful not to allow gross food soil into the machine. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115529" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="701" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for racking?]]></QUESTION>
+                <POLICY><![CDATA[Insure that operator is using the proper rack type for each type of item. Pay special attention to over/under loading of racks. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115555" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="706" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for scrap tray cleaning?]]></QUESTION>
+                <POLICY><![CDATA[Insure that operator is cleaning the scrap trays and machine screens regularly to insure proper water flow and allow for successful cleaning and sanitation. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115569" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="707" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for equipment cleaning?]]></QUESTION>
+                <POLICY><![CDATA[Insure that operators and staff are cleaning and sanitizing ALL kitchen equipment properly and with the correct product. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+            <ITEM fqid="115574" is_admin_question="0" is_focus_question="0" is_info_only="0" question_code="704" question_type="True/False" typeid="1">
+                <QUESTION><![CDATA[Is the operator following procedures for deliming?]]></QUESTION>
+                <POLICY><![CDATA[Insure that the operator is deliming the machine regularly and to specifications not only to eliminate lime scale buildup but to remove any built up food soils in the machine. If the procedures are good, place a check in the box next to the appropriate category. If not, click on the '+' for that category, then double click on the note pad and indicate training was conducted.]]></POLICY>
+            </ITEM>
+        </DEPARTMENT>
+    </DEPARTMENTS>
+</FORM>

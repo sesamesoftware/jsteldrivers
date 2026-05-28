@@ -1,0 +1,123 @@
+Environment: java 1.5.0_04, Java HotSpot(TM) Server VM, Sun Microsystems Inc., Linux, 2.4.20-43.9.legacysmp, i386
+Now running java nux.xom.tests.XQueryBenchmark 10 3 cache samples/romeo1000.xml ../nux/samples/xpath/queries1.xml 
+Now reading samples/romeo1000.xml ms=116296
+Now reading ../nux/samples/xpath/queries1.xml ms=5
+query = following-sibling::*   ms=7, queries/sec=1428.5714
+query = preceding-sibling::*   ms=6, queries/sec=1666.6666
+query = ancestor-or-self::*   ms=2, queries/sec=5000.0
+query = descendant::*   ms=3, queries/sec=3333.3333
+query = //*   ms=43942, queries/sec=0.22757271
+query = //line | //speaker   ms=50680, queries/sec=0.1973165
+query = 'Hello World!'   ms=2, queries/sec=5000.0
+query = count(//line)   ms=25992, queries/sec=0.38473377
+query = //line   ms=30119, queries/sec=0.33201635
+query = 1+1   ms=12, queries/sec=833.3333
+query = //speech[speaker = 'Rom.']   ms=39955, queries/sec=0.25028154
+query = //speech[speaker = 'Jul.']   ms=38994, queries/sec=0.2564497
+query = //line[ancestor::act[@id='5']/scene[@id='3']]   ms=128443, queries/sec=0.07785555
+query = true() and true() and true() and true() and true()   ms=4, queries/sec=2500.0
+query = //*[@id]   ms=33730, queries/sec=0.29647198
+query = (count(descendant::*) + count(ancestor::*) + count(following::*) + count(preceding::*)) >= 5034   ms=25429, queries/sec=0.39325178
+query = contains('1234567890','9')   ms=4, queries/sec=2500.0
+query = //processing-instruction()   ms=32243, queries/sec=0.31014484
+query = following-sibling::*   ms=1, queries/sec=10000.0
+query = name(node())   ms=7, queries/sec=1428.5714
+query = sum(//act/@id)   ms=21149, queries/sec=0.4728356
+query = /guttext/play/playbody/act[@id='5']/scene[@id='3']/speech   ms=415, queries/sec=24.096386
+query = normalize-space(string(distinct-values(/guttext/markupmeta/gutdate)))   ms=124, queries/sec=80.645164
+query = substring('12345', -42, 1.0e0 div 0)   ms=2, queries/sec=5000.0
+query = substring('12345', 0, 3)   ms=2, queries/sec=5000.0
+query = substring('12345', 1.5, 2.6)   ms=11, queries/sec=909.09094
+query = -5 mod -2   ms=1, queries/sec=10000.0
+query = -5 mod 2   ms=2, queries/sec=5000.0
+query = 5 mod -2   ms=1, queries/sec=10000.0
+query = 5 mod 2   ms=1, queries/sec=10000.0
+query = normalize-space( '  qwerty ' )   ms=1, queries/sec=10000.0
+query = ceiling( 3.1415 )   ms=2, queries/sec=5000.0
+query = floor( 3.1415 )   ms=2, queries/sec=5000.0
+query = ceiling( -3.1415 )   ms=2, queries/sec=5000.0
+query = floor( -3.1415 )   ms=10, queries/sec=1000.0
+query = /guttext/play/playbody/act   ms=46, queries/sec=217.3913
+done with repetition 0
+
+
+Now reading ../nux/samples/xpath/queries1.xml ms=4
+query = following-sibling::*   ms=1, queries/sec=10000.0
+query = preceding-sibling::*   ms=1, queries/sec=10000.0
+query = ancestor-or-self::*   ms=2, queries/sec=5000.0
+query = descendant::*   ms=1, queries/sec=10000.0
+query = //*   ms=49508, queries/sec=0.20198756
+query = //line | //speaker   ms=62347, queries/sec=0.16039264
+query = 'Hello World!'   ms=1, queries/sec=10000.0
+query = count(//line)   ms=25995, queries/sec=0.38468936
+query = //line   ms=36199, queries/sec=0.27625072
+query = 1+1   ms=1, queries/sec=10000.0
+query = //speech[speaker = 'Rom.']   ms=36792, queries/sec=0.27179822
+query = //speech[speaker = 'Jul.']   ms=36842, queries/sec=0.27142936
+query = //line[ancestor::act[@id='5']/scene[@id='3']]   ms=122897, queries/sec=0.081368946
+query = true() and true() and true() and true() and true()   ms=2, queries/sec=5000.0
+query = //*[@id]   ms=32410, queries/sec=0.30854675
+query = (count(descendant::*) + count(ancestor::*) + count(following::*) + count(preceding::*)) >= 5034   ms=24614, queries/sec=0.40627286
+query = contains('1234567890','9')   ms=3, queries/sec=3333.3333
+query = //processing-instruction()   ms=29964, queries/sec=0.3337338
+query = following-sibling::*   ms=1, queries/sec=10000.0
+query = name(node())   ms=1, queries/sec=10000.0
+query = sum(//act/@id)   ms=20770, queries/sec=0.48146364
+query = /guttext/play/playbody/act[@id='5']/scene[@id='3']/speech   ms=391, queries/sec=25.575447
+query = normalize-space(string(distinct-values(/guttext/markupmeta/gutdate)))   ms=50, queries/sec=200.0
+query = substring('12345', -42, 1.0e0 div 0)   ms=1, queries/sec=10000.0
+query = substring('12345', 0, 3)   ms=1, queries/sec=10000.0
+query = substring('12345', 1.5, 2.6)   ms=1, queries/sec=10000.0
+query = -5 mod -2   ms=1, queries/sec=10000.0
+query = -5 mod 2   ms=1, queries/sec=10000.0
+query = 5 mod -2   ms=1, queries/sec=10000.0
+query = 5 mod 2   ms=1, queries/sec=10000.0
+query = normalize-space( '  qwerty ' )   ms=1, queries/sec=10000.0
+query = ceiling( 3.1415 )   ms=1, queries/sec=10000.0
+query = floor( 3.1415 )   ms=2, queries/sec=5000.0
+query = ceiling( -3.1415 )   ms=1, queries/sec=10000.0
+query = floor( -3.1415 )   ms=2, queries/sec=5000.0
+query = /guttext/play/playbody/act   ms=45, queries/sec=222.22221
+done with repetition 1
+
+
+Now reading ../nux/samples/xpath/queries1.xml ms=4
+query = following-sibling::*   ms=0, queries/sec=Infinity
+query = preceding-sibling::*   ms=1, queries/sec=10000.0
+query = ancestor-or-self::*   ms=1, queries/sec=10000.0
+query = descendant::*   ms=1, queries/sec=10000.0
+query = //*   ms=37792, queries/sec=0.26460627
+query = //line | //speaker   ms=60267, queries/sec=0.16592829
+query = 'Hello World!'   ms=1, queries/sec=10000.0
+query = count(//line)   ms=26778, queries/sec=0.3734409
+query = //line   ms=35521, queries/sec=0.28152362
+query = 1+1   ms=1, queries/sec=10000.0
+query = //speech[speaker = 'Rom.']   ms=39367, queries/sec=0.25401986
+query = //speech[speaker = 'Jul.']   ms=37239, queries/sec=0.26853567
+query = //line[ancestor::act[@id='5']/scene[@id='3']]   ms=120810, queries/sec=0.08277461
+query = true() and true() and true() and true() and true()   ms=1, queries/sec=10000.0
+query = //*[@id]   ms=32096, queries/sec=0.3115653
+query = (count(descendant::*) + count(ancestor::*) + count(following::*) + count(preceding::*)) >= 5034   ms=24274, queries/sec=0.4119634
+query = contains('1234567890','9')   ms=2, queries/sec=5000.0
+query = //processing-instruction()   ms=30347, queries/sec=0.32952186
+query = following-sibling::*   ms=1, queries/sec=10000.0
+query = name(node())   ms=1, queries/sec=10000.0
+query = sum(//act/@id)   ms=21356, queries/sec=0.46825245
+query = /guttext/play/playbody/act[@id='5']/scene[@id='3']/speech   ms=492, queries/sec=20.325203
+query = normalize-space(string(distinct-values(/guttext/markupmeta/gutdate)))   ms=33, queries/sec=303.0303
+query = substring('12345', -42, 1.0e0 div 0)   ms=1, queries/sec=10000.0
+query = substring('12345', 0, 3)   ms=1, queries/sec=10000.0
+query = substring('12345', 1.5, 2.6)   ms=1, queries/sec=10000.0
+query = -5 mod -2   ms=1, queries/sec=10000.0
+query = -5 mod 2   ms=1, queries/sec=10000.0
+query = 5 mod -2   ms=1, queries/sec=10000.0
+query = 5 mod 2   ms=1, queries/sec=10000.0
+query = normalize-space( '  qwerty ' )   ms=1, queries/sec=10000.0
+query = ceiling( 3.1415 )   ms=1, queries/sec=10000.0
+query = floor( 3.1415 )   ms=2, queries/sec=5000.0
+query = ceiling( -3.1415 )   ms=1, queries/sec=10000.0
+query = floor( -3.1415 )   ms=2, queries/sec=5000.0
+query = /guttext/play/playbody/act   ms=45, queries/sec=222.22221
+done with repetition 2
+
+
